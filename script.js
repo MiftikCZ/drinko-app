@@ -25,7 +25,7 @@ function update() {
     let date = new Date()
     let dt = date.getUTCDate().toString() + date.getMonth().toString() + date.getUTCFullYear().toString()
     let vt = parseInt(data.get("vodated"+dt)) || 0
-    if(!data.get("vodagoal"))data.save("vodagoal",2000)
+    if(!data.get("vodagoal"))data.save("vodagoal",2)
     objem=data.get("sklenicka_objem")||300
     try {
         setHtml("voda-ted",(vt).toString())
