@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinko 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="colors.css">
+    <script src="firit.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body class="color1_0">
+    <div class="centered" id="popup"></div>
+
+
+    <div class="navbar">
+        <div class="cont">
+            <!-- hlavni -->
+
+            <div class="elem selected">
+                <span class="material-symbols-outlined">
+                    local_drink
+                </span>
+            </div>
+
+            <!-- tipy -->
+            <div class="elem" onclick="window.location.replace('./tips.html')">
+                <span class="material-symbols-outlined">
+                    tips_and_updates
+                </span>
+            </div>
+
+            <!-- nastavit -->
+            <div class="elem" onclick="window.location.replace('./settings.html')">
+                <span class="material-symbols-outlined">
+                    tune
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="text-center max-w-full title">
+
+    </div>
+    <br>
+    <div class="cont">
+        <div class="color1_1 content-center text-center podcont podcontanouc">
+            <span class="zbyva" id="voda-ted__">Zbývá ti ješte <span id="voda-ted_" class="zbyva_ bc">8</span> sklenic
+                vody!
+        </div>
+    </div>
+    <br>
+    <div class="cont nobg">
+        <div class="color1_1 content-center text-center podcont podcontdata nobg">
+            <div class="containerdata">
+                <div class="d2 dv">
+                    <span id="voda-ted" class="vyzn bc">0</span>
+                    <span class="lomitko">/</span>
+                    <span id="voda-goal" class="popis">2000</span>
+                    <span class="malym">mililitry</span>
+                </div>
+            </div>
+
+            <div class="containerdata">
+                <div class="d1 d3 dv">
+                    <span class="malym">skleničky</span>
+                    <span id="voda-ted2" class="vyzn bc">1,4</span>
+                    <span class="lomitko">/</span>
+                    <span id="voda-goal2" class="popis">2</span>
+                </div>
+                <div class="d1 d4 dv procentad">
+                    <span id="voda-ted3" class="vyzn bc">0</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="container text-center max-w-full title" style="
+    ">
+        přidat a odebrat
+    </div>
+    <br>
+    <div class="cont">
+        <div class="color1_1 cont podcont podcontadd">
+            <button class="color1_2 add-sklenicka" onclick="addWater('cup', 1)">
+                1 sklenička
+            </button>
+            <button class="color1_2  add-sklenicka" onclick="addWater('cup', 0.5)">
+                1/2 skleničky
+            </button>
+            <button class="color1_2 add-sklenicka" onclick="addWater(100, 1)">
+                100 ml
+            </button>
+            <span class="rozdelovac2"></span>
+            <button class="color1_3 add-sklenicka" onclick="addWater('cup', -0.5)">
+                1/2 skleničky
+            </button>
+            <button class="color1_3 add-sklenicka" onclick="addWater(100, -1)">
+                100 ml
+            </button>
+            <p style="height: 8px;"></p>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

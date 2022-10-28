@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinko 3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="colors.css">
+    <script src="firit.js"></script>
+    <script src="script.js"></script>
+    <style>
+        main {
+            color: #fefeff;
+        }
+
+        h1 {
+            border-bottom: #FFFFFF05 3px solid;
+        }
+
+        b {
+            background: #fff1;
+        }
+    </style>
+</head>
+
+<body class="color1_0">
+    <div class="centered" id="popup"></div>
+
+
+    <div class="navbar">
+        <div class="cont">
+            <div class="elem" onclick="window.location.replace('./')">
+                <span class="material-symbols-outlined">
+                    local_drink
+                </span>
+            </div>
+            <div class="elem">
+                <span class="material-symbols-outlined" onclick="window.location.replace('./tips.html')">
+                    tips_and_updates
+                </span>
+            </div>
+
+            <!-- nastavit -->
+            <div class="elem selected" onclick="window.location.replace('./settings.html')">
+                <span class="material-symbols-outlined">
+                    tune
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <div class="container text-center max-w-full title" style="
+">
+        přizspůsobit
+    </div>
+    <br>
+    <div class="cont">
+        <div class="color1_1 podcont podcontadd">
+            <form class="nastaveni-form">
+                <div class="container-goal">
+                    <input id="sklenicka-input" type="text" class="goal-input input" placeholder="Objem"
+                        title="Objem skleničky">
+                    <p style="height: 12px;"></p>
+                    <input id="voda-goal-input" type="text" class="goal-input input" placeholder="Denní cíl"
+                        title="Kolik vody chceš každý den vypít?">
+                    <p style="height: 12px;"></p>
+                    <button onclick="setObjem()" class="goal-tlacitko settlacitko color1_2" type="button">
+                        Nastavit
+                    </button>
+                </div>
+            </form>
+            <span class="malym2">*obě čísla musí být v <b>ml</b></span>
+            <p style="height: 10px;"></p>
+        </div>
+    </div>
+
+
+    <!-- dalsi -->
+
+    <br>
+    <div class="cont">
+        <div class="color1_1 podcont podconttexty">
+            <span class="radek2">
+                <span class="vlc"><span class="velce">Objem:</span></span>
+                <div class="mlc">
+                    <span class="ct" id="INP-objem">
+                        360<span class="jednotka">ml</span>
+                    </span>
+                </div>
+            </span>
+            <span class="radek2">
+                <span class="vlc"><span class="velce">Denní cíl:</span></span>
+                <div class="mlc">
+                    <span class="ct" id="INP-cil">
+                        4000<span class="jednotka">ml</span>
+                    </span>
+                </div>
+            </span>
+        </div>
+    </div>
+
+</body>
+
+</html>

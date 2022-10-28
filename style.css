@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,400;1,600&display=swap');
+
+:root {
+    --scheme: rgb(119, 207, 105);
+    --navbar-bg: #101010;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 8rem;
+}
+
+.panel {
+    padding: 2px;
+    font-weight: 600;
+}
+
+.panel-title {
+    font-size: 32px;
+    margin-left: 16px;
+}
+
+.add-sklenicka {
+    margin: 4px 3px;
+    width: 95%;
+    max-width: 200px;
+    color: #bababa;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 28px;
+    transition: 250ms;
+    padding: 18px 0;
+}
+
+.add-sklenicka:hover {
+    color: #FFF;
+}
+
+.goal-input {
+    background: transparent;
+    border-bottom: 4px hsl(208, 20%, 29%) solid;
+    border-radius: 0px;
+    padding: 4px 18px;
+    color: #fff;
+    transition: 250ms;
+}
+
+
+.goal-input:hover {
+    border-bottom: 4px hsl(208, 60%, 29%) solid;
+}
+
+
+.goal-tlacitko {
+    border-radius: 8px;
+    padding: 18px 0;
+    color: #fff;
+    transition: 250ms;
+}
+
+
+
+.goal-tlacitko:hover {
+    background: hsl(208, 60%, 29%);
+}
+
+
+
+
+.title2 {
+    display: inline-block;
+    color: rgb(179, 136, 136);
+    rotate: -5deg;
+    font-weight: 600;
+}
+
+.rozdelovac2 {
+    display: block;
+    width: 100%;
+    background: #101010;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin: 8px 0;
+    color: #c3c3c3;
+}
+
+.zbyva {
+    user-select: none;
+    font-size: 32px;
+    position: relative;
+    color: rgb(205, 205, 205);
+}
+
+
+.vyzn {
+
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.zbyva_ {
+    color: var(--scheme);
+    padding: 0px 0;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.popis {
+    color: #7c7c7c;
+    font-size: 38px;
+}
+
+.lomitko {
+    color: #7c7c7c;
+    user-select: none;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+.bc {
+    color: var(--scheme)
+}
+
+
+.navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    box-shadow: #000 0px 0px 5px 1px;
+    background: var(--navbar-bg);
+    /*#17181b*/
+    color: #fefeff;
+    font-size: 24px;
+}
+
+.navbar .cont {
+    display: grid;
+    text-align: center;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    width: 100vw;
+    padding: 0px;
+}
+
+.navbar .cont .elem {
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    width: max-content;
+    width: 6rem;
+    height: 6rem;
+    margin-left: 12px;
+    margin-right: 12px;
+    user-select: none;
+    transition: 250ms;
+}
+
+.selected {
+    border-bottom: hsl(240, 70%, 60%) 4px solid;
+}
+
+.navbar .cont .elem .material-symbols-outlined {
+    font-size: 40px;
+    color: hsl(240, 70%, 65%);
+    transition: 250ms;
+}
+
+.navbar .cont .elem:hover>.material-symbols-outlined {
+    color: hsl(240, 70%, 80%);
+}
+
+.navbar .cont .elem:nth-child(1) {
+    justify-self: end;
+}
+
+.navbar .cont .elem:nth-child(2) {
+    justify-self: center;
+}
+
+.navbar .cont .elem:nth-child(3) {
+    justify-self: start;
+}
+
+.dv {
+    padding: 20px;
+    padding-top: 36px;
+    display: inline-block;
+    background: #17181b;
+    border: #101010 3px solid;
+    border-radius: 12px;
+}
+
+.dv * {
+    display: inline;
+}
+
+
+.d2 {
+    width: 100%;
+}
+
+.d3 {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 36px;
+}
+
+.d4 {
+    width: 100%;
+    padding-top: 20px;
+    max-width: 135px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.containerdata:nth-child(2) {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+/*  CONTAINERS  */
+
+.input {
+    font-size: 20px;
+    width: 200px;
+}
+
+.cont {
+    width: 100%;
+    text-align: center;
+}
+
+.podcont {
+    width: 85%;
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 550px;
+}
+
+.podcontdata {
+    color: #bababa;
+    font-size: 32px;
+    display: inline-block;
+}
+
+.popis {
+    font-size: 32px;
+}
+
+.podcontanouc {
+    color: #bababa;
+    padding: 22px;
+}
+
+.podcontadd {
+
+    padding-top: 36px;
+}
+
+.settlacitko {
+    font-size: 23px;
+    width: 200px;
+}
+
+.nastaveni-form {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.nobg {
+    background: transparent !important;
+}
+
+
+.malym {
+    user-select: none;
+    font-size: 16px;
+    display: block;
+    text-align: start;
+    color: #7c7c7c;
+}
+
+.malym2 {
+    font-style: italic;
+    user-select: none;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    color: #7c7c7c;
+}
+
+.centered {
+    z-index: 2;
+    font-size: 28px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 1rem;
+}
+
+.popup .material-symbols-outlined {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.popup {
+    left: 0;
+    text-align: start;
+    color: #fff;
+    background: #6b6a6a;
+    width: 95%;
+    border-radius: 8px;
+    display: inline-flex;
+}
+
+.popup .maintext {
+    margin: 10px;
+}
+
+
+
+/* nastaveni */
+
+.podconttexty {
+    display: inline-block;
+    padding-top: 36px;
+    padding-bottom: 24px;
+}
+
+.vlc {
+    width: 100%;
+    display: inline-block;
+    text-align: end;
+}
+
+.mlc {
+    width: 100%;
+    display: inline-block;
+    text-align: start;
+}
+
+.ct {
+    margin-left: 12px;
+    display: block;
+    text-align: start;
+    color: var(--scheme);
+    font-weight: 600;
+
+}
+.jednotka {
+    font-weight: 400;
+}
+
+.hd {
+    letter-spacing: 3px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.radek2 {
+    justify-content: right;
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    margin-bottom: 12px;
+}
+
+tecka {
+    user-select: none;
+    display: inline-block;
+    margin-right: 6px;
+    height: 100%;
+    color: darkblue;
+}

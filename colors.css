@@ -1,0 +1,74 @@
+body {
+    background: #000;
+}
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+button {
+    cursor: pointer;
+    font-weight: 400;
+}
+
+b,
+strong {
+    font-weight: bold
+}
+
+
+table {
+    text-indent: 0;
+    border-color: inherit
+}
+
+
+
+
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor
+}
+
+
+.color1_0 {
+    background: #101010;
+}
+
+.color1_1 {
+    background: #17181b;
+}
+
+.color1_2 {
+    background: hsl(208, 20%, 29%);
+}
+
+
+.color1_3 {
+    background: hsl(0, 20%, 29%);
+}
+
+
+
+.block {
+    display:block;
+}
+
+.items-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.text-center {
+    text-align: center;
+}
+.max-w-full {
+    width: 100%;
+}
