@@ -27,7 +27,8 @@ body {
 }
 
 .add-sklenicka {
-    margin: 4px 3px;
+    --bottom-size: 0.2em;
+    margin: var(--bottom-size) 3px;
     width: 95%;
     max-width: 200px;
     color: #bababa;
@@ -36,6 +37,22 @@ body {
     font-size: 28px;
     transition: 250ms;
     padding: 18px 0;
+    border-bottom: #0005 var(--bottom-size) solid;
+    top: 0;
+    position: relative;
+}
+
+.add-sklenicka:active {
+    animation: addSklenickaClick 200s forwards normal;
+}
+
+@keyframes addSklenickaClick {
+    from {
+        border-bottom-color: #0000;
+        top: var(--bottom-size);
+    }
+
+    to { }
 }
 
 .add-sklenicka:hover {
@@ -52,7 +69,8 @@ body {
 }
 
 
-.goal-input:hover {
+.goal-input:focus-visible {
+    outline: none;
     border-bottom: 4px hsl(208, 60%, 29%) solid;
 }
 
@@ -272,7 +290,7 @@ body {
 }
 
 .podcontadd {
-
+    position: relative;
     padding-top: 36px;
 }
 
@@ -396,4 +414,17 @@ tecka {
     margin-right: 6px;
     height: 100%;
     color: darkblue;
+}
+
+.tips h1 {
+    margin-top: 0;
+}
+
+.tips code {
+    position: relative;
+    background: #333;
+    color: #eee;
+    font-family: monospace;
+    padding: 0.2em 0.5em;
+    border-radius: 0.25em;
 }
